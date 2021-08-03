@@ -1,0 +1,22 @@
+{
+  "name": "tailwind_static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0"
+  },
+  "scripts": {
+    "dev": "postcss src/styles.css -o dist/styles.css",
+    "build": "NODE_ENV=production postcss src/styles.css -o dist/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
