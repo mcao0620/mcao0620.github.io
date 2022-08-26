@@ -8,7 +8,8 @@
     "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
-    "postcss": "^8.1.10",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.16",
     "postcss-cli": "^8.3.0"
   },
   "scripts": {

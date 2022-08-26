@@ -7,7 +7,7 @@ module.exports = {
   purge: [
      // './src/**/*.html',
      // './src/**/*.js',
-     './dist/**/*.html',
+     './*.html',
    ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
@@ -18,9 +18,9 @@ module.exports = {
             neutral: colors.trueGray,
             gray: colors.coolGray,
             slate: colors.blueGray,
-            ...colors,
         }
-    }
+    },
+    colors: colors,
   },
   variants: {},
   plugins: [],
