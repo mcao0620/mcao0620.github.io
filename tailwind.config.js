@@ -7,12 +7,20 @@ module.exports = {
   purge: [
      // './src/**/*.html',
      // './src/**/*.js',
-     './dist/**/*.html'
+     './dist/**/*.html',
    ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
-    colors: colors
+    extend: {
+        colors: {
+            stone: colors.warmGray,
+            sky: colors.lightBlue,
+            neutral: colors.trueGray,
+            gray: colors.coolGray,
+            slate: colors.blueGray,
+            ...colors,
+        }
+    }
   },
   variants: {},
   plugins: [],
