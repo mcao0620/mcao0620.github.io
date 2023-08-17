@@ -1,0 +1,6 @@
+{
+  "ext": "js, html",
+  "events": {
+    "restart": "npm run dev"
+  }
+}

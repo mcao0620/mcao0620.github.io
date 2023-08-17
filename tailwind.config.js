@@ -1,6 +1,6 @@
 // tailwind.config.js
 
-let colors = require('tailwindcss/colors');
+let colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
@@ -8,6 +8,7 @@ module.exports = {
     // './src/**/*.js',
     "./*.html",
   ],
+  darkMode: "class",
   theme: {
     colors: colors,
   },
