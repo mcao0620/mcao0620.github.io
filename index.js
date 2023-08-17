@@ -32,7 +32,7 @@ const main = () => {
 
   app.addProjectCard({
     title: "Neural Historical Art Classifier",
-    url: "https://cs231n.stanford.edu/reports/2022/pdfs/80.pdf",
+    url: "http://cs231n.stanford.edu/reports/2022/pdfs/80.pdf",
     tools: ["PyTorch"],
     description:
       "Deep learning model to classify painting genre. Increased discriminatory power with texture-based features & deep discriminative representation learning with attention mapping (DDRL-AM).",
