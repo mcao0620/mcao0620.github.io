@@ -20,9 +20,9 @@ export default class App {
 
     if (userTheme === "dark" || (!userTheme && systemTheme)) {
       document.documentElement.classList.add("dark");
-      this.moonElem.classList.add("hidden");
+      this.sunElem.classList.remove("hidden");
     } else {
-      this.sunElem.classList.add("hidden");
+      this.moonElem.classList.remove("hidden");
     }
   }
 
