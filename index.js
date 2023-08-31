@@ -7,7 +7,7 @@ const main = () => {
 
   // Projects
   app.addProjectCard({
-    title: "Parabolic: Knowledge-enriched Tickets",
+    title: "Parabolic: Knowledge-Enriched Tickets",
     url: "https://github.com/mcao0620/modal-nyc-hackathon",
     tools: ["LlamaIndex", "GPT-4", "Tree-sitter", "Python", "Streamlit"],
     description:
