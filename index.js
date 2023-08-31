@@ -7,6 +7,14 @@ const main = () => {
 
   // Projects
   app.addProjectCard({
+    title: "Parabolic: Knowledge-enriched Tickets",
+    url: "https://storylines.info",
+    tools: ["LlamaIndex", "GPT-4", "Tree-sitter", "Python", "Streamlit"],
+    description:
+      "Generative AI assistant that helps users create codebase-aware software tickets. Finds relevant modules/classes/snippets and creates a graph visualization from their AST. Integrates with Linear.",
+  });
+
+  app.addProjectCard({
     title: "Storylines",
     url: "https://storylines.info",
     tools: ["Swift", "Supabase", "Social Media", "Entrepreneurship"],
