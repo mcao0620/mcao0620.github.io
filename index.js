@@ -11,7 +11,7 @@ const main = () => {
     url: "https://github.com/mcao0620/modal-nyc-hackathon",
     tools: ["LlamaIndex", "GPT-4", "Tree-sitter", "Python", "Streamlit"],
     description:
-      "Generative AI assistant that helps users create codebase-aware software tickets. Finds relevant modules/classes/snippets and creates a graph visualization from their AST. Integrates with Linear.",
+      "Generative AI assistant that helps users create codebase-aware software tickets. Augments tickets with relevant code/context/visualizations.", 
   });
 
   app.addProjectCard({
