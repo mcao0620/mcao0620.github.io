@@ -7,11 +7,19 @@ const main = () => {
 
   // Projects
   app.addProjectCard({
-    title: "Parabolic: Knowledge-Enriched Tickets",
+    title: "Marvolo",
+    url: "https://marvolo.vercel.app/",
+    tools: ["Langchain", "Python", "FastAPI", "Groq", "Gemini", "Supabase", "Next.js", "Tailwind CSS"],
+    description:
+      "AI agent that learns from your notes and integrates with your life.",
+  });
+
+  app.addProjectCard({
+    title: "Parabolic",
     url: "https://github.com/mcao0620/modal-nyc-hackathon",
     tools: ["LlamaIndex", "GPT-4", "Tree-sitter", "Python", "Streamlit"],
     description:
-      "Generative AI assistant that helps users create codebase-aware software tickets. Augments tickets with relevant code/context/visualizations.", 
+      "Generative AI assistant that helps users create codebase-aware software tickets. Augments tickets with relevant code, context, and visualizations.",
   });
 
   app.addProjectCard({
@@ -19,7 +27,7 @@ const main = () => {
     url: "https://storylines.info",
     tools: ["Swift", "Supabase", "Social Media", "Entrepreneurship"],
     description:
-      "Buiding an iOS app to help users bring the narratives out of the photos in their camera roll.\n\nComing soon.",
+      "iOS app that helps users bring the narratives out of the photos in their camera roll.",
   });
 
   app.addProjectCard({

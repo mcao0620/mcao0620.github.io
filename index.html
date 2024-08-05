@@ -1,106 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta
-      name="description"
-      content="A portfolio / personal site for Michael Cao, an entrepreneurial
-      student at Stanford studying Computer Science and AI."
-    />
-    <title>Michael Cao | Portfolio</title>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22
-      viewBox=%220 0 100 100%22><text y=%22.9em%22
-      font-size=%2290%22>🧑🏻‍💻</text></svg>"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./dist/styles.css" />
-    <script type="module" src="./index.js"></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"
-/> -->
-  </head>
 
-  <body class="bg-white dark:bg-blueGray-800">
-    <div
-      class="space-y-10 sm:space-y-16 md:space-y-20 lg:space-y-32
-      overflow-hidden"
-    >
-      <!-- Header -->
-      <header class="relative z-10 max-w-screen-lg xl:max-w-screen-xl mx-auto">
-        <div class="px-4 sm:px-6 md:px-8 mb-14 sm:mb-20 xl:mb-8">
-          <div
-            class="border-b border-gray-200 dark:border-slate-700 py-6 flex
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="A portfolio / personal site for Michael Cao, an entrepreneurial
+      student at Stanford studying Computer Science and AI." />
+  <title>Michael Cao | Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22
+      viewBox=%220 0 100 100%22><text y=%22.9em%22
+      font-size=%2290%22>🧑🏻‍💻</text></svg>" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./dist/styles.css" />
+  <script type="module" src="./index.js"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"
+/> -->
+</head>
+
+<body class="bg-white dark:bg-slate-900">
+  <div class="space-y-10 sm:space-y-16 md:space-y-20 lg:space-y-32
+      overflow-hidden">
+    <!-- Header -->
+    <header class="relative z-10 max-w-screen-lg xl:max-w-screen-xl mx-auto">
+      <div class="px-4 sm:px-6 md:px-8 mb-14 sm:mb-20 xl:mb-8">
+        <div class="border-b border-gray-200 dark:border-slate-700 py-6 flex
             items-center justify-between mb-16 sm:mb-20 -mx-4 px-4 sm:mx-0
-            sm:px-0"
-          >
-            <div class="space-x-6 sm:space-x-10">
-              <a
-                href="./src/michael_cao_resume_2023.pdf"
-                target="_blank"
-                class="text-base leading-6 font-medium text-gray-700
+            sm:px-0">
+          <div class="space-x-6 sm:space-x-10">
+            <a href="./src/michael_cao_resume_2023.pdf" target="_blank" class="text-base leading-6 font-medium text-gray-700
                 dark:text-slate-100 hover:text-gray-400 dark:hover:opacity-50
-                transition-all duration-200"
-                >Resume</a
-              >
-              <a
-                href="https://linkedin.com/in/cao-michael"
-                target="_blank"
-                class="text-base leading-6 font-medium text-gray-700
+                transition-all duration-200">Resume</a>
+            <a href="https://linkedin.com/in/cao-michael" target="_blank" class="text-base leading-6 font-medium text-gray-700
                 dark:text-slate-100 hover:text-gray-400 dark:hover:opacity-50
-                transition-all duration-200"
-                >LinkedIn</a
-              >
-              <a
-                href="https://github.com/mcao0620"
-                target="_blank"
-                class="text-base leading-6 font-medium text-gray-700
+                transition-all duration-200">LinkedIn</a>
+            <a href="https://github.com/mcao0620" target="_blank" class="text-base leading-6 font-medium text-gray-700
                 dark:text-slate-100 hover:text-gray-400 dark:hover:opacity-50
-                transition-all duration-200"
-                >GitHub</a
-              >
-            </div>
-            <div>
-              <!-- Sun -->
-              <div class="hidden sun">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="w-7 h-7 hover:cursor-pointer"
-                >
-                  <path
-                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                    class="fill-emerald-400/20 stroke-emerald-500"
-                  ></path>
-                  <path
-                    d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66
+                transition-all duration-200">GitHub</a>
+          </div>
+          <div>
+            <!-- Sun -->
+            <div class="hidden sun">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-7 h-7 hover:cursor-pointer">
+                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-emerald-400/20 stroke-emerald-500"></path>
+                <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66
                     17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995
-                    12.004h1.01M6 6l.835.836"
-                    class="stroke-emerald-500"
-                  ></path>
-                </svg>
-              </div>
-              <!-- Moon -->
-              <div class="hidden moon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  class="moon w-7 h-7 hover:cursor-pointer"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645
+                    12.004h1.01M6 6l.835.836" class="stroke-emerald-500"></path>
+              </svg>
+            </div>
+            <!-- Moon -->
+            <div class="hidden moon">
+              <svg viewBox="0 0 24 24" fill="none" class="moon w-7 h-7 hover:cursor-pointer">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645
                     4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032
-                    6.673-4.853Z"
-                    class="fill-emerald-400/20"
-                  ></path>
-                  <path
-                    d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9
+                    6.673-4.853Z" class="fill-emerald-400/20"></path>
+                <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9
                     6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221
                     8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0
                     3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5
@@ -109,167 +63,127 @@
                     9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042
                     6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136
                     8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725
-                    4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
-                    class="fill-emerald-500"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0
+                    4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-emerald-500"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0
                     0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0
-                    2-2 1 1 0 0 1 1-1Z"
-                    class="fill-emerald-500"
-                  ></path>
-                </svg>
-              </div>
+                    2-2 1 1 0 0 1 1-1Z" class="fill-emerald-500"></path>
+              </svg>
             </div>
           </div>
         </div>
-      </header>
-      <!-- Intro -->
-      <div
-        class="relative z-10 text-center max-w-screen-lg xl:max-w-screen-xl
-        mx-auto"
-      >
-        <div class="px-4 sm:px-6 md:px-8">
-          <h2
-            class="text-4xl sm:text-5xl lg:text-6xl leading-none font-extrabold
-            text-gray-900 dark:text-slate-100 tracking-tight mb-8"
-          >
-            Hi! I'm Michael Cao. I'm currently at Stanford studying Computer
-            Science. 👾
-          </h2>
-          <p
-            class="text-lg sm:text-2xl font-medium text-gray-500 text-slate-400
-            sm:leading-10 space-y-6 max-w-4xl mx-auto mb-6"
-          >
-            I'm passionate about harnessing the
-            <span class="">tremendous value of software and technology</span>
-            to
-            <span class="text-emerald-500">impact the lives of others.</span>
-          </p>
-        </div>
       </div>
+    </header>
+    <!-- Intro -->
+    <div class="relative z-10 text-center max-w-screen-lg xl:max-w-screen-xl
+        mx-auto">
+      <div class="px-4 sm:px-6 md:px-8">
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl leading-none font-extrabold
+            text-gray-900 dark:text-slate-100 tracking-tight mb-8">
+          Hi! I'm Michael Cao. I'm a software engineer and Stanford CS grad. 👾
+        </h2>
+        <p class="text-lg sm:text-2xl font-medium text-gray-500 text-slate-400
+            sm:leading-10 space-y-6 max-w-4xl mx-auto mb-6">
+          I'm passionate about harnessing the
+          <span class="">tremendous value of software and technology</span>
+          to
+          <span class="text-emerald-500">impact the lives of others.</span>
+        </p>
+      </div>
+    </div>
 
-      <!-- Projects -->
-      <div class="text-center max-w-screen-lg xl:max-w-screen-xl mx-auto">
-        <div class="px-4 sm:px-6 md:px-8">
-          <h2
-            class="text-3xl md:text-5xl font-bold mb-10 text-center
-            dark:text-slate-100"
-          >
-            Projects
-          </h2>
-          <div
-            class="projects-grid grid sm:grid-cols-1 md:grid-cols-2
-            lg:grid-cols-3 gap-6"
-          >
-            <!-- Template Project Card -->
-            <div class="template project-card">
-              <a
-                href="https://mcao0620.github.io"
-                target="_blank"
-                class="project-url"
-              >
-                <div
-                  class="text-start relative min-w-sm max-w-sm sm:max-w-lg h-72
+    <!-- Projects -->
+    <div class="text-center max-w-screen-lg xl:max-w-screen-xl mx-auto">
+      <div class="px-4 sm:px-6 md:px-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-10 text-center
+            dark:text-slate-100">
+          Projects
+        </h2>
+        <div class="projects-grid grid sm:grid-cols-1 md:grid-cols-2
+            lg:grid-cols-3 gap-6">
+          <!-- Template Project Card -->
+          <div class="template project-card">
+            <a href="https://mcao0620.github.io" target="_blank" class="project-url">
+              <div class="text-start relative min-w-sm max-w-sm sm:max-w-lg h-72
                   sm:h-80 mx-auto p-4 opacity-100 dark:opacity-80
-                  dark:bg-slate-600 rounded-3xl hover:scale-95 hover:opacity-60
+                  dark:bg-slate-700 rounded-3xl hover:scale-95 hover:opacity-60
                   dark:hover:opacity-100 transition-transform duration-100
-                  shadow-lg dark:shadow-none"
-                >
-                  <div class="flex flex-row justify-between">
-                    <div
-                      class="project-title font-bold dark:text-slate-100
-                      text-3xl"
-                    >
-                      Storylines
-                    </div>
-                    <div class="text-xl ml-2">🔗</div>
+                  shadow-lg dark:shadow-none">
+                <div class="flex flex-row justify-between">
+                  <div class="project-title font-bold dark:text-slate-100
+                      text-3xl">
+                    Storylines
                   </div>
-                  <div class="flex flex-row flex-wrap my-1">
-                    <div
-                      class="template project-tool bg-white dark:bg-slate-500
+                  <div class="text-xl ml-2">🔗</div>
+                </div>
+                <div class="flex flex-row flex-wrap my-1">
+                  <div class="template project-tool bg-white dark:bg-slate-500
                       px-2 mr-2 my-1 rounded-xl hover:scale-105
-                      transition-transform duration-100 shadow"
-                    >
-                      <div
-                        class="project-tool-text text-black
-                        dark:text-slate-100"
-                      >
-                        Template
-                      </div>
+                      transition-transform duration-100 shadow">
+                    <div class="project-tool-text text-black
+                        dark:text-slate-100">
+                      Template
                     </div>
-                  </div>
-                  <div class="project-description dark:text-slate-400">
-                    Template Description
                   </div>
                 </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- More About Me -->
-      <div
-        class="relative z-10 text-center max-w-screen-lg xl:max-w-screen-xl
-        mx-auto"
-      >
-        <div
-          class="flex flex-col-reverse space-y-8 space-y-reverse md:flex-row
-          px-4 md:space-x-20 sm:px-6 md:px-8"
-        >
-          <div class="basis-1/2 mb-6 sm:mb-0">
-            <h2
-              class="text-3xl xl:text-4xl font-bold dark:text-slate-300
-              text-center md:text-left mb-6"
-            >
-              More About Me
-            </h2>
-            <p
-              class="text-lg sm:text-2xl md:text-base lg:text-2xl font-medium
-              text-left text-gray-500 dark:text-slate-400 sm:leading-10
-              space-y-6 max-w-4xl mx-auto mb-6"
-            >
-              At Stanford, I'm a TA for our operating systems class, CS111, and have previously TA'd one of our introductory web development
-              courses. I also served as a section leader for Stanford's
-              intro CS classes. I was also a core team member in Stanford XR,
-              where I served as co-VP of Projects and Bootcamp Lead.
-            </p>
-            <p
-              class="text-lg sm:text-2xl md:text-base lg:text-2xl font-medium
-              text-left text-gray-500 dark:text-slate-400 sm:leading-10
-              space-y-6 max-w-4xl mx-auto"
-            >
-              I aspire to be a leader at the forefront of technological change.
-              I am actively seeking out opportunities to learn as much as I can
-              about problem spaces I hope to make an impact in, from knowledge
-              management and photos/videos to education and healthcare. I am
-              deeply committed to building for those who need it most,
-              incorporating human-centered design and ethical decision-making
-              to
-              ensure that products I build are in tune with user needs and are 
-              uncompromisingly safe.
-            </p>
-          </div>
-          <div class="basis-1/2 px-4 sm:px-6 md:px-0">
-            <img
-              class="object-contain rounded-3xl hover:scale-105
-              transition-transform duration-150"
-              src="./src/grad_photo.png"
-            />
+                <div class="project-description dark:text-slate-400">
+                  Template Description
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
+    <!-- More About Me -->
+    <div class="relative z-10 text-center max-w-screen-lg xl:max-w-screen-xl
+        mx-auto">
+      <div class="flex flex-col-reverse space-y-8 space-y-reverse md:flex-row
+          px-4 md:space-x-20 sm:px-6 md:px-8">
+        <div class="basis-1/2 mb-6 sm:mb-0">
+          <h2 class="text-3xl xl:text-4xl font-bold dark:text-slate-100
+              text-center md:text-left mb-6">
+            More About Me
+          </h2>
+          <p class="text-lg sm:text-2xl md:text-base lg:text-2xl font-medium
+              text-left text-gray-500 dark:text-slate-400 sm:leading-10
+              space-y-6 max-w-4xl mx-auto mb-6">
+            I am a recent Stanford graduate with a B.S. and M.S. in Computer Science.
+            At Stanford, I was involved in teaching through the CS198 section leading
+            program and serving as a CA for web development, operating systems,
+            and software project courses. I also served as a VP for Stanford Club Tennis
+            and Stanford XR.
+          </p>
+          <p class="text-lg sm:text-2xl md:text-base lg:text-2xl font-medium
+              text-left text-gray-500 dark:text-slate-400 sm:leading-10
+              space-y-6 max-w-4xl mx-auto mb-6">
+            I aspire to be a leader at the forefront of technological change and am
+            deeply committed to building for those who need it most. I prioritize
+            human-centered design and ethical decision-making
+            to ensure that products I build are in tune with user needs and are
+            uncompromisingly safe.
+          </p>
+          <p class="text-lg sm:text-2xl md:text-base lg:text-2xl font-medium
+              text-left text-gray-500 dark:text-slate-400 sm:leading-10
+              space-y-6 max-w-4xl mx-auto">
+            In my free time, I love listening to electronic music, playing piano and guitar,
+            and staying active through working out and playing tennis.
+          </p>
+        </div>
+        <div class="basis-1/2 px-4 sm:px-6 md:px-0">
+          <img class="object-contain rounded-3xl hover:scale-105
+              transition-transform duration-150" src="./src/grad_photo.png" />
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script> -->
 
-    <!-- GitHub Cat SVG -->
-    <!-- <svg
+  <!-- GitHub Cat SVG -->
+  <!-- <svg
       viewBox="0 0 16 16"
       class="w-5 h-5"
       fill="currentColor"
@@ -287,5 +201,6 @@
 8c0-4.42-3.58-8-8-8z"
       ></path>
     </svg> -->
-  </body>
+</body>
+
 </html>
