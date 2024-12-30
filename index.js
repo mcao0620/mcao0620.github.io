@@ -113,4 +113,19 @@ const main = () => {
   });
 };
 
+function setTheme() {
+  const userTheme = localStorage.getItem("theme");
+  const systemTheme = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+
+  if (userTheme === "dark" || (!userTheme && systemTheme)) {
+    document.documentElement.classList.add("dark");
+    this.sunElem.classList.remove("hidden");
+  } else {
+    this.moonElem.classList.remove("hidden");
+  }
+}
+
+window.onload = setTheme
 main();
