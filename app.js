@@ -12,7 +12,6 @@ export default class App {
     this.moonElem.addEventListener("click", this.toggleTheme);
   }
 
-
   toggleTheme() {
     if (document.documentElement.classList.contains("dark")) {
       document.documentElement.classList.remove("dark");
