@@ -3,6 +3,8 @@ import App from "./app.js";
 const main = () => {
   let app = new App();
 
+  app.loadThemeIcon();
+
   // Projects
   app.addProjectCard({
     title: "Marvolo",
@@ -111,24 +113,4 @@ const main = () => {
   });
 };
 
-function setTheme() {
-  const userTheme = localStorage.getItem("theme");
-  const systemTheme = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-  ).matches;
-
-  const sunElem = document.querySelector(".sun");
-  const moonElem = document.querySelector(".moon");
-
-  if (userTheme === "dark" || (!userTheme && systemTheme)) {
-    document.documentElement.classList.add("dark");
-    sunElem?.classList.remove("hidden");
-  } else {
-    moonElem?.classList.remove("hidden");
-  }
-}
-
-window.onload = () => {
-  setTheme();
-  main();
-};
+main();

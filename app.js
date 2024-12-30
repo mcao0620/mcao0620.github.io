@@ -12,6 +12,22 @@ export default class App {
     this.moonElem.addEventListener("click", this.toggleTheme);
   }
 
+  loadThemeIcon() {
+    const userTheme = localStorage.getItem("theme");
+    const systemTheme = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+  
+    const sunElem = document.querySelector(".sun");
+    const moonElem = document.querySelector(".moon");
+  
+    if (userTheme === "dark" || (!userTheme && systemTheme)) {
+      sunElem?.classList.remove("hidden");
+    } else {
+      moonElem?.classList.remove("hidden");
+    }
+  }
+
   toggleTheme() {
     if (document.documentElement.classList.contains("dark")) {
       document.documentElement.classList.remove("dark");
