@@ -122,14 +122,11 @@ function setTheme() {
 
   if (userTheme === "dark" || (!userTheme && systemTheme)) {
     document.documentElement.classList.add("dark");
-    sunElem.classList.remove("hidden");
+    sunElem?.classList.remove("hidden");
   } else {
-    moonElem.classList.remove("hidden");
+    moonElem?.classList.remove("hidden");
   }
 }
-
-// Run immediately to avoid flash of incorrect theme.
-setTheme();
 
 window.onload = () => {
   setTheme();
