@@ -117,13 +117,21 @@ function setTheme() {
     "(prefers-color-scheme: dark)"
   ).matches;
 
+  const sunElem = document.querySelector(".sun");
+  const moonElem = document.querySelector(".moon");
+
   if (userTheme === "dark" || (!userTheme && systemTheme)) {
     document.documentElement.classList.add("dark");
-    this.sunElem.classList.remove("hidden");
+    sunElem.classList.remove("hidden");
   } else {
-    this.moonElem.classList.remove("hidden");
+    moonElem.classList.remove("hidden");
   }
 }
 
-window.onload = setTheme
-main();
+// Run immediately to avoid flash of incorrect theme.
+setTheme();
+
+window.onload = () => {
+  setTheme();
+  main();
+};
