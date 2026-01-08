@@ -4,9 +4,8 @@ let colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
-    // './src/**/*.html',
-    // './src/**/*.js',
     "./*.html",
+    "./*.js",
   ],
   darkMode: "class",
   theme: {
