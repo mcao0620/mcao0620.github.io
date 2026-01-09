@@ -18,7 +18,7 @@ module.exports = {
         bambooInverse: "#ffffff",   // vulgaris.inverse
         bambooMuted: "#838781",     // vulgaris.light_grey
         bambooGrey: "#5b5e5a",      // vulgaris.grey
-        bambooCard: "#ece1c0",      // softer light neutral (multiplex.fg)
+        bambooCard: "#dae6cf",      // softer light neutral (multiplex.fg)
         bambooGreen: "#8fb573",     // vulgaris.green
         bambooBlue: "#57a5e5",      // vulgaris.blue
         bambooLightBlue: "#96c7ef", // vulgaris.light_blue
