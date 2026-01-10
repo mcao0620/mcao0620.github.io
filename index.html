@@ -3,10 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="description" content="A portfolio / personal site for Michael Cao, an entrepreneurial
-      student at Stanford studying Computer Science and AI." />
-  <title>Michael Cao | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Michael Cao - Software Engineer at Glean" />
+  <title>Michael Cao</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22
       viewBox=%220 0 100 100%22><text y=%22.9em%22
       font-size=%2290%22>🧑🏻‍💻</text></svg>" />
@@ -22,154 +21,75 @@
         document.documentElement.classList.add("dark");
       }
     })();
-  </script>     
+  </script>
   <script type="module" src="./index.js"></script>
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"
-/> -->
 </head>
 
 <body class="bg-bambooFg text-bambooContrast dark:bg-bambooBgDark dark:text-bambooFg">
-  <div class="space-y-10 sm:space-y-16 md:space-y-20 lg:space-y-32
-      overflow-hidden">
-    <!-- Header -->
-    <header class="relative z-10 max-w-screen-lg xl:max-w-screen-xl mx-auto">
-      <div class="px-4 sm:px-6 md:px-8 mb-14 sm:mb-20 xl:mb-8">
-        <div class="border-b border-bambooMuted/40 dark:border-bambooMuted/60 py-6 flex
-            items-center justify-between mb-16 sm:mb-20 -mx-4 px-4 sm:mx-0
-            sm:px-0">
-          <div class="space-x-6 sm:space-x-10">
-            <a href="./src/michael_cao_resume_2023.pdf" target="_blank" class="text-base leading-6 font-medium text-bambooMuted
-                dark:text-bambooFg hover:text-bambooOrange dark:hover:opacity-50
-                transition-all duration-200">Resume</a>
-            <a href="https://linkedin.com/in/cao-michael" target="_blank" class="text-base leading-6 font-medium text-bambooMuted
-                dark:text-bambooFg hover:text-bambooOrange dark:hover:opacity-50
-                transition-all duration-200">LinkedIn</a>
-            <a href="https://github.com/mcao0620" target="_blank" class="text-base leading-6 font-medium text-bambooMuted
-                dark:text-bambooFg hover:text-bambooOrange dark:hover:opacity-50
-                transition-all duration-200">GitHub</a>
-          </div>
-          <div>
-            <!-- Sun -->
-            <div class="hidden sun">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="w-7 h-7 hover:cursor-pointer text-bambooGreen">
-                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-bambooGreen/20 stroke-bambooGreen"></path>
-                <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66
-                    17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995
-                    12.004h1.01M6 6l.835.836" class="stroke-bambooGreen"></path>
-              </svg>
-            </div>
-            <!-- Moon -->
-            <div class="hidden moon">
-              <svg viewBox="0 0 24 24" fill="none" class="moon w-7 h-7 hover:cursor-pointer text-bambooBlue">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645
-                    4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032
-                    6.673-4.853Z" class="fill-bambooBlue/20"></path>
-                <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9
-                    6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221
-                    8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0
-                    3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5
-                    7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153
-                    5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75
-                    9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042
-                    6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136
-                    8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725
-                    4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-bambooBlue"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0
-                    0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0
-                    2-2 1 1 0 0 1 1-1Z" class="fill-bambooBlue"></path>
-              </svg>
-            </div>
-          </div>
+  <div class="min-h-screen flex flex-col justify-between max-w-xl mx-auto px-4 py-8 sm:px-4 sm:py-10">
+    <!-- Nav -->
+    <nav class="flex items-center justify-between mb-12">
+      <span class="text-base font-medium text-bambooContrast dark:text-bambooFg">Home</span>
+      <div>
+        <!-- Sun -->
+        <div class="hidden sun">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-6 h-6 hover:cursor-pointer text-bambooGreen">
+            <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-bambooGreen/20 stroke-bambooGreen"></path>
+            <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66
+                17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995
+                12.004h1.01M6 6l.835.836" class="stroke-bambooGreen"></path>
+          </svg>
+        </div>
+        <!-- Moon -->
+        <div class="hidden moon">
+          <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6 hover:cursor-pointer text-bambooBlue">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645
+                4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032
+                6.673-4.853Z" class="fill-bambooBlue/20"></path>
+            <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9
+                6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221
+                8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0
+                3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5
+                7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153
+                5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75
+                9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042
+                6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136
+                8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725
+                4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-bambooBlue"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0
+                0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0
+                2-2 1 1 0 0 1 1-1Z" class="fill-bambooBlue"></path>
+          </svg>
         </div>
       </div>
-    </header>
-    <!-- Intro -->
-    <div class="relative z-10 text-center max-w-screen-lg xl:max-w-screen-xl
-        mx-auto">
-      <div class="px-4 sm:px-6 md:px-8">
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl leading-none font-extrabold
-            text-bambooContrast dark:text-bambooFg tracking-tight mb-8">
-          Hi! I'm Michael Cao. I'm a software engineer and Stanford CS grad. 👾
-        </h2>
-        <p class="text-lg sm:text-2xl font-medium text-bambooMuted dark:text-bambooMuted
-            sm:leading-10 space-y-6 max-w-4xl mx-auto mb-6">
-          I'm passionate about harnessing the
-          <span class="">tremendous value of software and technology</span>
-          to
-          <span class="text-bambooOrange">impact the lives of others.</span>
-        </p>
-      </div>
-    </div>
+    </nav>
 
-    <!-- Projects -->
-    <div class="text-center max-w-screen-lg xl:max-w-screen-xl mx-auto">
-      <div class="px-4 sm:px-6 md:px-8">
-        <h2 class="text-3xl md:text-5xl font-bold mb-10 text-center
-            dark:text-bambooFg">
-          Projects
-        </h2>
-        <div class="projects-grid grid sm:grid-cols-1 md:grid-cols-1
-            lg:grid-cols-2 xl:grid-cols-3 gap-8">
-          <!-- Template Project Card -->
-          <div class="template project-card mb-10">
-            <a href="https://mcao0620.github.io" target="_blank" class="project-url">
-              <div class="text-start relative min-w-sm max-w-sm sm:max-w-lg h-72
-                  sm:h-80 mx-auto p-4 opacity-100 dark:opacity-80
-                  bg-bambooCard dark:bg-bambooBg rounded-3xl hover:scale-95 hover:opacity-60
-                  dark:hover:opacity-100 transition-transform duration-100
-                  shadow-lg dark:shadow-none">
-                <div class="flex flex-row justify-between">
-                  <div class="project-title font-bold text-bambooContrast dark:text-bambooFg
-                      text-3xl">
-                    Storylines
-                  </div>
-                  <div class="text-xl ml-2">🔗</div>
-                </div>
-                <div class="flex flex-row flex-wrap my-1">
-                  <div class="template project-tool bg-bambooCard dark:bg-bambooBg2
-                      px-2 mr-2 my-1 rounded-xl hover:scale-105
-                      transition-transform duration-100 shadow">
-                    <div class="project-tool-text text-bambooContrast dark:text-bambooFg">
-                      Template
-                    </div>
-                  </div>
-                </div>
-                <div class="project-description text-bambooMuted dark:text-bambooMuted">
-                  Template Description
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+    <!-- Main Content -->
+    <main class="flex-1">
+      <h1 class="text-xl font-bold text-bambooContrast dark:text-bambooFg mb-3">
+       Michael Cao 
+      </h1>
+      <p class="text-xl text-bambooMuted dark:text-bambooMuted">
+       I'm a software engineer at Glean building AI products that transform how people work.
+      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-sm text-bambooMuted dark:text-bambooMuted mt-12">
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/mcao0620" target="_blank" 
+           class="hover:text-bambooContrast dark:hover:text-bambooFg transition-colors">GitHub</a>
+        <a href="https://linkedin.com/in/cao-michael" target="_blank" 
+           class="hover:text-bambooContrast dark:hover:text-bambooFg transition-colors">LinkedIn</a>
+        <a href="https://twitter.com/mcao0620" target="_blank" 
+           class="hover:text-bambooContrast dark:hover:text-bambooFg transition-colors">Twitter</a>
+        <a href="./src/michael_cao_resume_2023.pdf" target="_blank" 
+           class="hover:text-bambooContrast dark:hover:text-bambooFg transition-colors">Resume</a>
       </div>
-    </div>
+      <span>© 2026 Michael Cao</span>
+    </footer>
   </div>
-
-  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script> -->
-
-  <!-- GitHub Cat SVG -->
-  <!-- <svg
-      viewBox="0 0 16 16"
-      class="w-5 h-5"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path
-        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
-1.08.58 1.23.82.72 1.21 1.87.87
-2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
-0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18
-1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08
-2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0
-1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016
-8c0-4.42-3.58-8-8-8z"
-      ></path>
-    </svg> -->
 </body>
 
 </html>
