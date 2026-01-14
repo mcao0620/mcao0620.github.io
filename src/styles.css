@@ -1,2 +1,20 @@
 @config "../tailwind.config.js";
 @import "tailwindcss";
+
+.prose {
+  --tw-prose-body: #111210;
+  --tw-prose-headings: #111210;
+  --tw-prose-links: #111210;
+  --tw-prose-bold: #111210;
+  --tw-prose-counters: #838781;
+  --tw-prose-bullets: #838781;
+}
+
+.dark .prose {
+  --tw-prose-body: #f1e9d2;
+  --tw-prose-headings: #f1e9d2;
+  --tw-prose-links: #f1e9d2;
+  --tw-prose-bold: #f1e9d2;
+  --tw-prose-counters: #838781;
+  --tw-prose-bullets: #838781;
+}

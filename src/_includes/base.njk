@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ description or 'Michael Cao - Software Engineer at Glean' }}" />
+  <title>{{ title or 'Michael Cao' }}</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22
+      viewBox=%220 0 100 100%22><text y=%22.9em%22
+      font-size=%2290%22>🧑🏻‍💻</text></svg>" />
+  <script>
+    (function () {
+      const userTheme = localStorage.getItem("theme");
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const isDark = userTheme === "dark" || (!userTheme && systemTheme);
+      if (isDark) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+  <style>
+    .preload * {
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -ms-transition: none !important;
+      -o-transition: none !important;
+      transition: none !important;
+    }
+  </style>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/index.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.remove("preload");
+    });
+    document.addEventListener('click', async (e) => {
+      const link = e.target.closest('a[href^="/"]');
+      if (!link || link.target === '_blank') return;
+      e.preventDefault();
+      // Fetch new page and replace HTML
+      const res = await fetch(link.href);
+      const html = new DOMParser().parseFromString(await res.text(), 'text/html');
+      document.querySelector('main').innerHTML = html.querySelector('main').innerHTML;
+      document.title = html.title;
+      // Update history without reloading
+      history.pushState({}, '', link.href);
+    });
+    window.addEventListener('popstate', async () => {
+      const res = await fetch(location.href);
+      const html = new DOMParser().parseFromString(await res.text(), 'text/html');
+      document.querySelector('main').innerHTML = html.querySelector('main').innerHTML;
+      document.title = html.title;
+    });
+  </script>
+</head>
+
+<body class="preload bg-bambooFg text-bambooContrast dark:bg-bambooBgDark dark:text-bambooFg">
+  <div class="min-h-screen flex flex-col justify-between max-w-xl mx-auto px-4 py-8 sm:px-4 sm:py-10">
+    <!-- Nav -->
+    <nav class="flex items-center justify-between mb-12">
+      <a href="/" class="text-base font-medium text-bambooContrast dark:text-bambooFg hover:opacity-70 transition-all duration-200">Home</a>
+      <div class="flex items-center gap-4">
+        <a href="/writing/" class="text-sm text-bambooMuted hover:text-bambooContrast dark:hover:text-bambooFg transition-all duration-200">Writing</a>
+        <!-- <a href="/links/" class="text-sm text-bambooMuted hover:text-bambooContrast dark:hover:text-bambooFg transition-all duration-200">Links</a> -->
+        <div class="w-6 h-6 relative">
+          <!-- Sun -->
+          <div class="sun absolute inset-0 opacity-0 transition-opacity">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="w-6 h-6 hover:cursor-pointer text-bambooGreen">
+              <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-bambooGreen/20 stroke-bambooGreen"></path>
+              <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66
+                  17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995
+                  12.004h1.01M6 6l.835.836" class="stroke-bambooGreen"></path>
+            </svg>
+          </div>
+          <!-- Moon -->
+          <div class="moon absolute inset-0 opacity-0 transition-opacity">
+            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6 hover:cursor-pointer text-bambooBlue">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645
+                  4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032
+                  6.673-4.853Z" class="fill-bambooBlue/20"></path>
+              <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9
+                  6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221
+                  8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0
+                  3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5
+                  7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153
+                  5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75
+                  9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042
+                  6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136
+                  8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725
+                  4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-bambooBlue"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0
+                  0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0
+                  2-2 1 1 0 0 1 1-1Z" class="fill-bambooBlue"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      {{ content | safe }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-sm text-bambooMuted dark:text-bambooMuted mt-12">
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/mcao0620" target="_blank" 
+           class="hover:text-bambooContrast dark:hover:text-bambooFg transition-all duration-200">GitHub</a>
+        <a href="https://linkedin.com/in/cao-michael" target="_blank" 
+           class="hover:text-bambooContrast dark:hover:text-bambooFg transition-all duration-200">LinkedIn</a>
+        <a href="https://x.com/mcao0620" target="_blank" 
+           class="hover:text-bambooContrast dark:hover:text-bambooFg transition-all duration-200">𝕏</a>
+        <a href="/assets/michael_cao_resume_2023.pdf" target="_blank" 
+           class="hover:text-bambooContrast dark:hover:text-bambooFg transition-all duration-200">Resume</a>
+      </div>
+      <span>© 2026 Michael Cao</span>
+    </footer>
+  </div>
+</body>
+
+</html>

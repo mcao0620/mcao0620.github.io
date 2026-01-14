@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: Michael Cao
+---
+
+<h1 class="text-xl font-bold text-bambooContrast dark:text-bambooFg mb-3">
+  Michael Cao
+</h1>
+<p class="text-xl text-bambooMuted dark:text-bambooMuted">
+  I'm a software engineer at Glean building transformational AI products.
+</p>
+
+<div class="mt-12">
+  <div class="flex flex-col gap-4">
+    {% for post in collections.posts | reverse %}
+      {% if loop.index0 < 3 %}
+      <div class="flex flex-col gap-1 items-start">
+        <a href="{{ post.url }}" class="text-base font-medium text-bambooContrast dark:text-bambooFg underline decoration-transparent hover:decoration-bambooGreen underline-offset-4 transition-all duration-200">
+          {{ post.data.title }}
+        </a>
+        <time class="text-sm text-bambooMuted" datetime="{{ post.date.toISOString() }}">
+          {{ post.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) }}
+        </time>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
