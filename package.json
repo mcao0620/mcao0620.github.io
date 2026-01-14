@@ -15,10 +15,10 @@
     "tailwindcss": "^4.1.18"
   },
   "scripts": {
-    "build:css": "NODE_ENV=production postcss src/styles.css -o dist/styles.css",
+    "build:css": "NODE_ENV=production postcss src/styles.css -o docs/styles.css",
     "build:11ty": "eleventy",
     "build": "npm run build:11ty && npm run build:css",
-    "dev:css": "postcss src/styles.css -o dist/styles.css --watch",
+    "dev:css": "postcss src/styles.css -o docs/styles.css --watch",
     "dev:11ty": "eleventy --serve --port=3000 --watch",
     "dev": "npm run build:css && run-p dev:css dev:11ty"
   },

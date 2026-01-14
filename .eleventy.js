@@ -3,14 +3,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/index.js": "index.js" });
   
-  // Pass through compiled CSS
-  eleventyConfig.addPassthroughCopy({ "dist/styles.css": "styles.css" });
-
   // Watch for CSS changes during dev
-  eleventyConfig.addWatchTarget("dist/");
-  
   eleventyConfig.setServerOptions({
-    watch: ["dist/**/*.css"]
+    watch: ["docs/styles.css"]
   });
 
   return {
