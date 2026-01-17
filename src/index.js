@@ -12,12 +12,9 @@ function toggleTheme() {
 
 function initTheme() {
   loadThemeIcon();
-
-  const sunIcon = document.querySelector(".sun");
-  const moonIcon = document.querySelector(".moon");
-
-  sunIcon?.addEventListener("click", toggleTheme);
-  moonIcon?.addEventListener("click", toggleTheme);
+  
+  const themeToggle = document.querySelector("#theme-toggle");
+  themeToggle?.addEventListener("click", toggleTheme);
 }
 
 // Handle SPA navigation
