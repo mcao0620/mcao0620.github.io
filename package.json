@@ -10,17 +10,12 @@
     "autoprefixer": "^10.4.23",
     "browser-sync": "^3.0.4",
     "cssnano": "^7.1.2",
-    "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1",
-    "tailwindcss": "^4.1.18"
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.5.6"
   },
   "scripts": {
-    "build:css": "NODE_ENV=production postcss src/styles.css -o docs/styles.css",
-    "build:11ty": "eleventy",
-    "build": "npm run build:11ty && npm run build:css",
-    "dev:css": "postcss src/styles.css -o docs/styles.css --watch",
-    "dev:11ty": "eleventy --serve --port=3000 --watch",
-    "dev": "npm run build:css && run-p dev:css dev:11ty"
+    "build": "NODE_ENV=production eleventy",
+    "dev": "eleventy --serve --port=3000"
   },
   "keywords": [],
   "author": "",

@@ -7,16 +7,22 @@ layout: base.njk
 
 <div class="prose dark:prose-invert">
 
-*January 2026*
+### {{ title }}
 
-I first built this site back in August 2021. The setup was dead simple—just a single `index.html` file styled with Tailwind CSS, alongside some vanilla JavaScript for dark mode and a module that rendered project cards into the page. Everything was compiled through [PostCSS](https://postcss.org/), so the final CSS sent to browsers was tree-shaken and minified.
+*{{ date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' }) }}*
 
-I've wanted to write more on this site, so I extended that foundation with [11ty](https://www.11ty.dev/), a simple, fast static site generator that handles Markdown and templates the existing HTML across pages. Each post now gets its own page without having to duplicate the layout in every HTML file.
+I first built this site in August 2021. The initial setup was designed to be as simple, speedy, and lightweight as possible:
 
-We're all so used to the smoothness of navigating around [SPAs](https://en.wikipedia.org/wiki/Single-page_application) that I wanted to bring that same feeling here. I added a small script that intercepts link clicks, fetches the new page, and swaps out just the `<main>` content so that the CSS doesn't reload and cause page flickers when navigating between internal pages.
+- It consisted of a single `index.html` file.
+- It used Tailwind CSS for styling, vanilla JavaScript for dark mode, and a custom module to render project cards.
+- It was compiled through [PostCSS](https://postcss.org/), which tree-shook and minified the CSS to ensure the smallest possible payload for the browser.
+
+I've wanted to write more frequently, so I extended that foundation with [11ty](https://www.11ty.dev/)—a simple, fast static site generator that handles Markdown and templates HTML across pages. Now, each post has its own page without the need for manual layout duplication.
+
+Since we're all accustomed to the fluid navigation of [SPAs](https://en.wikipedia.org/wiki/Single-page_application), I wanted to replicate that experience here. I added a small script that intercepts link clicks, fetches the new page, and swaps out only the `<main>` content. This prevents the CSS from reloading and eliminates page flickers while navigating through internal pages.
 
 ### What's next
 
-I'm going to use this space to share what I'm learning and building!
+I'll be using this space to share what I'm learning and building!
 
 </div>

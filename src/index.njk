@@ -7,7 +7,7 @@ title: Michael Cao
   Michael Cao
 </h1>
 <p class="text-xl text-bambooMuted dark:text-bambooMuted">
-  I'm a software engineer at Glean building transformational AI products.
+  I'm a software engineer at Glean, building AI products that transform how people work.
 </p>
 
 <div class="mt-12">
@@ -19,7 +19,7 @@ title: Michael Cao
           {{ post.data.title }}
         </a>
         <time class="text-sm text-bambooMuted" datetime="{{ post.date.toISOString() }}">
-          {{ post.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) }}
+          {{ post.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' }) }}
         </time>
       </div>
       {% endif %}

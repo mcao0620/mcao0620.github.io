@@ -13,7 +13,7 @@ permalink: /writing/
       {{ post.data.title }}
     </a>
     <time class="text-sm text-bambooMuted" datetime="{{ post.date.toISOString() }}">
-      {{ post.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) }}
+      {{ post.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' }) }}
     </time>
   </div>
 {% endfor %}
