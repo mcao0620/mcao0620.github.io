@@ -19,7 +19,7 @@ I first built this site in August 2021. The initial setup was designed to be as 
 
 I've wanted to write more frequently, so I extended that foundation with [11ty](https://www.11ty.dev/)—a simple, fast static site generator that handles Markdown and templates HTML across pages. Now, each post has its own page without the need for manual layout duplication.
 
-Since we're all accustomed to the fluid navigation of [SPAs](https://en.wikipedia.org/wiki/Single-page_application), I wanted to replicate that experience here. I added a small script that intercepts link clicks, fetches the new page, and swaps out only the `<main>` content. This prevents the CSS from reloading and eliminates page flickers while navigating through internal pages.
+Since we're all accustomed to the fluid navigation of [SPAs](https://en.wikipedia.org/wiki/Single-page_application), I wanted to replicate that experience here. I added a small script that intercepts link clicks, fetches the new page, and swaps out only the `<main>` content. This prevents the CSS from reloading and eliminates page flickers during internal navigation.
 
 ### What's next
 
